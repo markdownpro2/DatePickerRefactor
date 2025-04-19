@@ -1,4 +1,4 @@
-# Fix Persian Datepicker & Dashboard Calendar
+# Fix Persian Datepicker & Dashboard Calendar & Adding Date Events Data
 
 jquery.ui.datepicker
 
@@ -25,3 +25,10 @@ In this method we will change the content of the mentioned library so that we do
 
 - Copy `dashboard-widget-calender` files `component.js` , `style.css` , `template.html`
 - Paste in this path `\workflow\Uniform\Scripts\components\dashboard\widgets\dashboard-widget-calender`
+
+### 3. Adding Date Events Data
+If the events are not shown on the dashboard calendar there's a chance that the `DateEvents` table is empty.
+If it's the case you can insert the events with this sql query.
+
+- In Sql Server Management Studio, execute `dbo.DateEvents.Table.sql`.
+

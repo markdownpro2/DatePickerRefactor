@@ -1,4 +1,4 @@
-﻿.dashboard-widget-calender {
+.dashboard-widget-calender {
   height: 292px;
   border-radius: 10px;
 }
@@ -153,8 +153,23 @@ jdp-container.dashboard-widget-calender {
   border: 1px solid rgba(0, 245, 255, 0.3);
 }
 
-[title] {
+/* [title] {
   font-weight: bolder !important;
+} */
+
+.has-event {
+  position: relative; /* Ensure the element is positioned for the pseudo-element */
+}
+
+.has-event::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 4px;
+  height: 4px;
+  background-color: #34b0a4;
+  border-radius: 50%;
 }
 
 .today {

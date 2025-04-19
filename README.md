@@ -1,1 +1,27 @@
-# DatePickerRefactor
+# Fix Persian Datepicker & Dashboard Calendar
+
+jquery.ui.datepicker
+
+## intro
+
+In this method we will change the content of the mentioned library so that we don’t have to change the content of the pages and load the scripts and links.
+
+### 1. Fix Persian Datepicker with JalaliDatepicker
+
+---
+
+### JavaScript Section
+
+- Copy `jquery.ui.datepicker-cc.js` and `jquery.ui.datepicker-cc-fa.js`
+- In the root of the project (`IstgOfficeAutomation`) go to `/Scripts/lib/jquery.ui/` or `SUBSYSTEM/Uniform/js/` where `jquery.ui.datepicker-cc.js` and `jquery.ui.datepicker-cc-fa.js` exist paste the copied files.
+
+### CSS Section
+
+- Copy `jalalidatepicker.min.css` content and paste it at the end of a CSS file that loads in every page or desired page. for instance you can add these CSS content to `/Content/template/template.css` or in older versions `jquery.ui.custom.css` .
+
+**Note**: The file you choose varies from one version to another. you can inspect the page.
+
+### 2. Update dashboard’s calendar
+
+- Copy `dashboard-widget-calender` files `component.js` , `style.css` , `template.html`
+- Paste in this path `\workflow\Uniform\Scripts\components\dashboard\widgets\dashboard-widget-calender`

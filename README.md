@@ -27,6 +27,10 @@ In this method we will change the content of the mentioned library so that we do
 - Paste in this path `\workflow\Uniform\Scripts\components\dashboard\widgets\dashboard-widget-calender`
 
 ### 3. Adding Date Events Data
+
+![image](https://github.com/user-attachments/assets/fc116c5b-4b4e-47de-b61d-d1986dde042c)
+
+
 If the events are not shown on the dashboard calendar there's a chance that the `DateEvents` table is empty.
 If it's the case you can insert the events with this sql query.
 

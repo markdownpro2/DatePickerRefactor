@@ -17,9 +17,9 @@ In this method we will change the content of the mentioned library so that we do
 
 ### CSS Section
 
-- Copy `jalalidatepicker.min.css` content and paste it at the end of a CSS file that loads in every page or desired page. for instance you can add these CSS content to `/Content/template/template.css` or in older versions `jquery.ui.custom.css` .
+- Open `jalalidatepicker.min.css` with **Notepad** or **Notepad++** and copy its content and paste it at the end of a CSS file that loads in every page or desired page. for instance you can add these CSS content to `/Content/template/template.css` or in older versions `jquery.ui.custom.css`.
 
-**Note**: The file you choose varies from one version to another. you can inspect the page.
+**Note**: The file you choose varies from one version to another. you can inspect the page using `F12` and inspect the CSS requests in `network` tab.
 
 ### 2. Update dashboard’s calendar
 

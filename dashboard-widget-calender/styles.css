@@ -185,7 +185,7 @@ jdp-container.dashboard-widget-calender {
 
 jdp-container .jdp-day,
 jdp-container .jdp-day-name {
-  flex-basis: 13% !important;
+  flex-basis: 12.6% !important;
 }
 
 jdp-container .jdp-day:not(.disabled-day):hover {

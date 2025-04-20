@@ -13,7 +13,7 @@ In this method we will change the content of the mentioned library so that we do
 ### JavaScript Section
 
 - Copy `jquery.ui.datepicker-cc.js` and `jquery.ui.datepicker-cc-fa.js`
-- In the root of the project (`IstgOfficeAutomation`) go to `/Scripts/lib/jquery.ui/` or `SUBSYSTEM/Uniform/js/` where `jquery.ui.datepicker-cc.js` and `jquery.ui.datepicker-cc-fa.js` exist paste the copied files.
+- In the root of the project (`IstgOfficeAutomation`) go to `/Scripts/lib/jquery.ui/` or `workflow/Uniform/js/` where `jquery.ui.datepicker-cc.js` and `jquery.ui.datepicker-cc-fa.js` exist paste the copied files.
 
 ### CSS Section
 

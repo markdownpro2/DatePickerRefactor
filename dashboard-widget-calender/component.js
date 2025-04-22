@@ -95,6 +95,7 @@ define([
           autoShow: true,
           showTodayBtn: false,
           showEmptyBtn: false,
+          showCloseBtn: false,
           isDashboard: true,
           // useDropDownYears: false,
           dayRendering: ({ inAfterMonth, inBeforeMonth }) => {

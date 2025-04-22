@@ -10,6 +10,7 @@
 
 .dashboard-widget-calender .calender {
   height: 296px !important;
+  width: 100%;
 }
 
 .dashboard-widget-calender .calender jdp-container {
@@ -172,6 +173,10 @@ jdp-container.dashboard-widget-calender {
   border-radius: 50%;
 }
 
+.has-event.today::after {
+  background-color: #ffffff;
+}
+
 .today {
   background: linear-gradient(45deg, #4de0e8, #1cb5e0) !important;
   color: #ffffff !important;
@@ -185,9 +190,9 @@ jdp-container.dashboard-widget-calender {
 
 jdp-container .jdp-day,
 jdp-container .jdp-day-name {
-  flex-basis: 12.6% !important;
+  flex-basis: 13% !important;
 }
 
 jdp-container .jdp-day:not(.disabled-day):hover {
-  background: rgba(0, 247, 255, 0.2) !important;
+  background: rgba(0, 247, 255, 0.4) !important;
 }

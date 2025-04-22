@@ -1,0 +1,20 @@
+{
+  "workflow": "workflow",
+  "shareui": "shareui",
+  "regbook": "regbook",
+  "replacement_path": "replacements",
+  "datepicker_folder": "datepicker",
+  "dashboard_folder": "dashboard",
+  "datepicker_files": {
+    "js": ["jquery.ui.datepicker-cc.js", "jquery.ui.datepicker-cc-fa.js"],
+    "css": "jalalidatepicker.min.css"
+  },
+  "datepicker_paths": {
+    "js_old": "Uniform/js",
+    "js_new": "Scripts/lib/jquery.ui",
+    "css_old": "Uniform/css/redmond/jquery-ui-1.8.4.custom.css",
+    "css_new_folder": "Content/template",
+    "css_new_file": "Content/template/template.css"
+  },
+  "dashboard_target": "workflow/Uniform/Scripts/components/dashboard/widgets/dashboard-widget-calender"
+}

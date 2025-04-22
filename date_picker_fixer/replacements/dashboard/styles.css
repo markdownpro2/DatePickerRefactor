@@ -1,0 +1,193 @@
+﻿.dashboard-widget-calender {
+  height: 292px;
+  border-radius: 10px;
+}
+
+.dashboard-widget-calender .calender,
+.dashboard-widget-calender .events {
+  width: 296px;
+}
+
+.dashboard-widget-calender .calender {
+  height: 296px !important;
+}
+
+.dashboard-widget-calender .calender jdp-container {
+  background: none !important;
+}
+
+.dashboard-widget-calender .events {
+  height: 296px;
+}
+
+.dashboard-widget-calender .events h3 {
+  height: 31px;
+  background-color: #d85030;
+  color: white;
+  line-height: 31px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.dashboard-widget-calender .events > div {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 264px;
+}
+
+.dashboard-widget-calender .events div > ul > li {
+  padding-right: 12px;
+}
+
+.dashboard-widget-calender .events > div::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+}
+
+.dashboard-widget-calender .events > div::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+.dashboard-widget-calender .events > div::-webkit-scrollbar-thumb {
+  background: rgba(193, 193, 193, 0.5);
+  border: 0px none #ffffff;
+  /*border-radius: 50px;*/
+}
+
+.dashboard-widget-calender .events > div::-webkit-scrollbar-thumb:hover {
+  background: rgba(193, 193, 193, 0.9);
+}
+
+.dashboard-widget-calender .events > div::-webkit-scrollbar-thumb:active {
+  background: rgba(193, 193, 193, 1);
+}
+
+.dashboard-widget-calender .events > div::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+  border: 0px none #ffffff;
+  /*border-radius: 50px;*/
+}
+
+.dashboard-widget-calender .events > div::-webkit-scrollbar-track:hover {
+  background: rgba(255, 255, 255, 0);
+}
+
+.dashboard-widget-calender .events > div::-webkit-scrollbar-track:active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.dashboard-widget-calender .events > div::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.ui-datepicker th {
+  width: 14.28% !important;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+  line-height: 3em !important;
+  text-align: center !important;
+  /*padding: unset !important;*/
+  padding: 0px !important;
+  padding-left: 0px !important;
+}
+
+.ui-datepicker {
+  width: 288px !important;
+  height: 292px !important;
+  border: 0px !important;
+  padding: 0px !important;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-state-default {
+  /*background-color: #f5f5f5 !important;*/
+  /*-webkit-box-shadow: inset 0px 0px 0px 2px #e0e0e0 !important;
+        -moz-box-shadow: inset 0px 0px 0px 2px #e0e0e0 !important;
+        box-shadow: inset 0px 0px 0px 2px #e0e0e0 !important;*/
+  -webkit-box-shadow: inset 0px 0px 0px 2px #bfd5ee !important;
+  -moz-box-shadow: inset 0px 0px 0px 2px #bfd5ee !important;
+  box-shadow: inset 0px 0px 0px 2px #bfd5ee !important;
+  border: 0 !important;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-state-active {
+  color: black !important;
+  /*background-color: #d6d6d6 !important;
+        background-color: #9ee0c7 !important;*/
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-state-highlight {
+  color: black !important;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #6ea8e2 !important;
+  -moz-box-shadow: inset 0px 0px 0px 2px #6ea8e2 !important;
+  box-shadow: inset 0px 0px 0px 2px #6ea8e2 !important;
+  border: 0 !important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  background-color: #86b0df !important;
+  color: #ffffff !important;
+  color: #25568d !important;
+}
+
+.ui-datepicker .holiday a {
+  color: #d85030 !important;
+}
+
+/* new styles for calendar */
+jdp-container.dashboard-widget-calender {
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 128, 0.32);
+  background: rgba(255, 255, 255, 0.87);
+}
+
+/* .jdp-day:not(.today):not(.selected) {
+  background: linear-gradient(45deg, #f2fbff, #d6f0ff) !important;
+} */
+.jdp-day:not(.today):not(.selected) {
+  background: rgba(0, 245, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 245, 255, 0.3);
+}
+
+/* [title] {
+  font-weight: bolder !important;
+} */
+
+.has-event {
+  position: relative; /* Ensure the element is positioned for the pseudo-element */
+}
+
+.has-event::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 4px;
+  height: 4px;
+  background-color: #34b0a4;
+  border-radius: 50%;
+}
+
+.today {
+  background: linear-gradient(45deg, #4de0e8, #1cb5e0) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+.jdp-icon-minus,
+.jdp-icon-plus {
+  background: white !important;
+}
+
+jdp-container .jdp-day,
+jdp-container .jdp-day-name {
+  flex-basis: 13% !important;
+}
+
+jdp-container .jdp-day:not(.disabled-day):hover {
+  background: rgba(0, 247, 255, 0.2) !important;
+}

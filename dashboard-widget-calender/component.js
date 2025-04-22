@@ -1,4 +1,4 @@
-﻿define([
+define([
   "text!components/dashboard/widgets/dashboard-widget-calender/template.html",
   "css!components/dashboard/widgets/dashboard-widget-calender/styles.css",
   "services/dashboardService",
@@ -95,6 +95,7 @@
           autoShow: true,
           showTodayBtn: false,
           showEmptyBtn: false,
+          isDashboard: true,
           // useDropDownYears: false,
           dayRendering: ({ inAfterMonth, inBeforeMonth }) => {
             return {

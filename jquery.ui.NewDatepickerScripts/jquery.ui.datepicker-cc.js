@@ -1,4 +1,4 @@
-﻿!(function () {
+!(function () {
   "use strict";
   !(function () {
     var t = void 0;
@@ -20,7 +20,6 @@
     var e = function (t) {
         return void 0 === t;
       },
-      isDashboard = document.location.href.includes("workflow&page=home"),
       i = function (t) {
         return "function" == typeof t;
       },
@@ -687,6 +686,7 @@
       vt = {
         init: function (t) {
           var n;
+          var that = this;
           this.updateOptions(t),
             (Element.prototype.matches =
               Element.prototype.matchesSelector ||
@@ -713,7 +713,7 @@
                       return t.target;
                     }
                   })(t) !== vt.input &&
-                  !isDashboard &&
+                  !that.options?.isDashboard &&
                   vt.hide();
               }),
             this.options.autoShow &&
@@ -772,6 +772,7 @@
           topSpace: 0,
           bottomSpace: 0,
           overflowSpace: -10,
+          isDashboard: !1,
         }),
         input: null,
         get dpContainer() {
@@ -930,15 +931,15 @@
               i - n >= r &&
                 i + r >= window.innerHeight &&
                 (i -= r + n + this.options.bottomSpace + this.options.topSpace),
-              (this.dpContainer.style.position = !isDashboard
+              (this.dpContainer.style.position = !this.options?.isDashboard
                 ? "fixed"
                 : "relative"),
-              (this.dpContainer.style.height = isDashboard && "98.7%"),
+              (this.dpContainer.style.height = this.options.isDashboard && "98.7%"),
               (this.dpContainer.style.left = e + "px"),
               (this.dpContainer.style.top = i + "px");
 
             this.dpContainer.className =
-              isDashboard && "dashboard-widget-calender";
+              this.options?.isDashboard && "dashboard-widget-calender";
           }
         },
         get getValue() {

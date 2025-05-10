@@ -1,4 +1,4 @@
-﻿!(function () {
+!(function () {
   "use strict";
   !(function () {
     var t = void 0;
@@ -934,7 +934,8 @@
               (this.dpContainer.style.position = !this.options?.isDashboard
                 ? "fixed"
                 : "relative"),
-              (this.dpContainer.style.height = this.options.isDashboard && "98.7%"),
+              (this.dpContainer.style.height =
+                this.options.isDashboard && "98.7%"),
               (this.dpContainer.style.left = e + "px"),
               (this.dpContainer.style.top = i + "px");
 
@@ -1257,7 +1258,8 @@ const initializeTriggerButton = (dateElement) => {
 
 function normalizeDatePickers() {
   document
-    .querySelectorAll('input:not([type="hidden"])')
+    // auto_txtDate is for this page 'viewTemplateData' the page for creating and editing document templates
+    .querySelectorAll('input:not([type="hidden"]):not([id*="auto_txtDate" i])')
     .forEach(function (input) {
       const id = input.id?.toLowerCase() || "";
       const cls = input.className?.toLowerCase() || "";
